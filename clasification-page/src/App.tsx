@@ -10,10 +10,7 @@ function App() {
   };
 
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const files = event.target.files;
-    if (files) {
-      console.log(files);
-    }
+    setSelectedFiles(event.target.files); // Guardamos los archivos seleccionados
   }
 
   const handleDivClick = () => {
